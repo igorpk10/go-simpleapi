@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"igorpk/simpleapi/database"
 	"igorpk/simpleapi/models"
 	"igorpk/simpleapi/routes"
 )
@@ -12,6 +13,7 @@ func main() {
 		{Id: 2, Name: "Name 2", History: "History 2"},
 	}
 
+	database.ConnectDB()
 	fmt.Println("Server up")
 	routes.HandleRequest()
 }

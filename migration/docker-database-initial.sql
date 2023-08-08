@@ -1,9 +1,9 @@
 create table personalities(
-    id serial primay key,
+    id serial PRIMARY KEY,
     name varchar,
     history varchar
 )
 
 INSERT INTO personalities (name, history) VALUES
-('Portgas D. Ace', 'Fire firts')
+('Portgas D. Ace', 'Fire firts'),
 ('Franky', 'SUPEEEEEEEEEEER')
